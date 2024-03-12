@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Live Update PMF Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="!featureScreen" style = "--background: url('../../assets/background.jpg') no-repeat center;background-size:cover;">
+  <div>
+    <img src="assets/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+    <h4 id="page-heading1" style="color:#FFFFFF;text-align:center;">
+      ACME Mall
+    </h4>
+    <div id="page-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#F9F9F9;font-size:13px;">
+        <em>
+          One stop destination for all your shopping needs
+        </em>
+      </p>
+    </div>
+    <ion-footer>
+      <div class="spacer" style="height:250px;" id="page-spacer1"></div>
+      <ion-button  color="primary" fill="solid" id="page-button1"  expand="block">
+        Quick Shopping
+      </ion-button>
+      <ion-button  color="primary" fill="solid" id="page-button3" expand="block">
+        Support
+      </ion-button>
+    </ion-footer>
+  </div>
+  
+</ion-content>
+
+
+<ion-content *ngIf="featureScreen" style = "--background: url('../../assets/festival.jpg') no-repeat center;background-size:cover;">
+  <div>
+    <img src="assets/logo.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+    <h4 id="page-heading1" style="color:#FFFFFF;text-align:center;">
+      ACME Mall
+    </h4>
+    <div id="page-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#F9F9F9;font-size:13px;">
+        <em>
+          One stop destination for all your shopping needs
+        </em>
+      </p>
+    </div>
+    <ion-footer>
+      <div class="spacer" style="height:250px;" id="page-spacer1"></div>
+      <ion-button  color="primary" fill="solid" id="page-button1"  expand="block">
+        Quick Shopping
+      </ion-button>
+      <ion-button  color="primary" fill="solid" id="page-button2" expand="block">
+        Support
+      </ion-button>
+      <ion-button  color="primary" fill="solid" id="page-button3" expand="block">
+        {{buttonText}}
+      </ion-button>
+    </ion-footer>
+  </div>
+</ion-content>
+
